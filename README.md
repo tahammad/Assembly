@@ -4,10 +4,10 @@
 MIPS Programming  
 
 
-SBU ID#  
+SBU ID#  114863193
 
 
-Name:  
+Name:  Tanjim Ahammad
 
 
 Test cases for each part  

@@ -11,6 +11,96 @@ Name:  Tanjim Ahammad
 
 
 Test cases for each part  
+Part A:
+1. Test Case 1: Error Testing
+Input 1: 0
+Input 2: -1
+Output: Please ensure that your size is greater than 0.
+
+Triangle(0) or Square(1) or Pyramid (2)?0
+Required size? -1
+Please ensure that your size is greater than 0.
+
+2. Test Case 2: Error Testing
+Input 1: 4
+Output: Please enter 0, 1, or 2.
+
+Triangle(0) or Square(1) or Pyramid (2)?4
+Please enter 0, 1, or 2.
+
+3. Test Case 3: Error Testing
+Input 1: 2
+Input 2: 0
+Output: Please ensure that your size is greater than 0.
+
+Triangle(0) or Square(1) or Pyramid (2)?2
+Required size? 0
+Please ensure that your size is greater than 0.
+
+4. Test Case 4: Error Testing
+Input 1: -1
+Output: Please enter 0, 1, or 2.
+
+Triangle(0) or Square(1) or Pyramid (2)?-1
+Please enter 0, 1, or 2.
+
+5. Test Case 5: Error Testing
+Input 1: 3
+Output: Please enter 0, 1, or 2.
+
+Triangle(0) or Square(1) or Pyramid (2)?3
+Please enter 0, 1, or 2.
+
+6. Test Case 6: Normal Testing
+Input 1: 0
+Input 2: 8
+Output:
+*
+**
+***
+****
+*****
+******
+*******
+********
+
+7. Test Case 7: Normal Testing
+Input 1: 1
+Input 2: 6
+Output:
+******
+******
+******
+******
+******
+******
+
+8. Test Case 8: Normal Testing
+Input 1: 2
+Input 2: 9
+Output:
+        * 
+       * * 
+      * * * 
+     * * * * 
+    * * * * * 
+   * * * * * * 
+  * * * * * * * 
+ * * * * * * * * 
+* * * * * * * * * 
+
+9. Test Case 9: Normal Testing
+Input 1: 1
+Input 2: 1
+Output:
+*
+
+10. Test Case 10: Normal Testing
+Input 1: 2
+Input 2: 1
+Output:
+*
+
 
 Part C:
 
@@ -147,7 +237,7 @@ Output:
     140
     220
     300
-    
+
 5.Test Case 5: Error Testing Inequal Matrix Column and Vector Row
 Size:
     col_m: .word 4        

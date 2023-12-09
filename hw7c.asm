@@ -5,7 +5,7 @@
   m:      .word 10   		  # m is an int whose value is at most 10
                      		  # max value for rows and columns
   col_m: .word 5          # columns for matrix M: This should not be more than 10
-  row_m: .word 2          # rows for matrix M:    This should not be more than 10
+  row_m: .word 9          # rows for matrix M:    This should not be more than 10
                           # (col_m * row_m) * 4 <= M
   col_v: .word 1          # colums for vector V. For a vector, the column is always one
   row_v: .word 5          # rows for vector V. This should not be more than 10
@@ -35,6 +35,9 @@ bgt $t2, 400, space_error	#If the byte size used by the matrix is greater than t
 mul $t2, $t1, $t4		#Set $t2 to the number of elements in the vector
 sll $t2, $t2,2			#Multiply the number of elements by 4 in order to set $t2 to the byte size
 bgt $t2, 400, space_error	#If the byte size used by the vector is greater than the limit of 400 bytes, throw an error
+mul $t2, $t0, $t1		#Set $t2 to the number of elements in the result vector
+sll $t2, $t2,2			#Multiply the number of elements by 4 in order to set $t2 to the byte size
+bgt $t2, 400, space_error	#If the byte size used by the result vector is greater than the limit of 400 bytes, throw an error
 move $a0, $t0			#Set $a0 to the number of columns in the matrix
 la $a2, M			#Set $a2 argument to the address of the matrix
 la $a3, V			#Set the $a3 argument to the address of the matrix

@@ -17,7 +17,7 @@
   vector_prompt1: 	.asciiz "Enter all the elements in the vector: \n"
   matrix_prompt1: 	.asciiz "Enter all the elements in the matrix: \n"
   newline:		.asciiz "\n"
-  
+   
 
 
 

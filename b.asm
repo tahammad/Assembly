@@ -7,7 +7,7 @@ C:		.asciiz "]="
 spacechar:	.asciiz " "
 bar:		.asciiz "|"
 newline:	.asciiz "\n"
-
+ 
 
 .align 2
 pinA: .space	400 # We will not change this

@@ -6,7 +6,7 @@ newline:	    .asciiz "\n"
 space:		    .asciiz " " 
 figure_error:	.asciiz "Please enter 0, 1, or 2."
 size_error:	.asciiz "Please ensure that your size is greater than 0."
-
+ 
 
 .text
 main:
